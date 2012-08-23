@@ -1,0 +1,13 @@
+name = Humanitarianresponse Login
+description = Provides Mozilla Persona based login
+core = 7.x
+package = Humanitarianresponse
+dependencies[] = browserid
+dependencies[] = email_registration
+dependencies[] = features
+dependencies[] = genpass
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[user_permission][] = log in using browserid
+features[variable][] = genpass_mode
