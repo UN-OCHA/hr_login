@@ -16,6 +16,34 @@ function hr_login_strongarm() {
   $strongarm->name = 'genpass_mode';
   $strongarm->value = '2';
   $export['genpass_mode'] = $strongarm;
+  
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'persona_block_switch_account';
+  $strongarm->value = FALSE;
+  $export['persona_block_switch_account'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'persona_button_style';
+  $strongarm->value = '';
+  $export['persona_button_style'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'persona_email_usernames';
+  $strongarm->value = 1;
+  $export['persona_email_usernames'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'persona_takeover';
+  $strongarm->value = 1;
+  $export['persona_takeover'] = $strongarm;
 
   return $export;
 }
