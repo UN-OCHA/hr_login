@@ -16,7 +16,7 @@ function hr_login_strongarm() {
   $strongarm->name = 'genpass_mode';
   $strongarm->value = '2';
   $export['genpass_mode'] = $strongarm;
-  
+
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -37,6 +37,13 @@ function hr_login_strongarm() {
   $strongarm->name = 'persona_email_usernames';
   $strongarm->value = 1;
   $export['persona_email_usernames'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'persona_new_account_edit';
+  $strongarm->value = 1;
+  $export['persona_new_account_edit'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
