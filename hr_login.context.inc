@@ -30,7 +30,7 @@ function hr_login_context_default_contexts() {
           'module' => 'persona',
           'delta' => 'buttons',
           'region' => 'user_second',
-          'weight' => '-10',
+          'weight' => '0',
         ),
       ),
     ),
