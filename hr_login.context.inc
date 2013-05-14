@@ -13,7 +13,7 @@ function hr_login_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
-  $context->name = 'sitewide_users';
+  $context->name = 'sitewide_login';
   $context->description = '';
   $context->tag = '';
   $context->conditions = array(
@@ -36,7 +36,7 @@ function hr_login_context_default_contexts() {
     ),
   );
   $context->condition_mode = 0;
-  $export['sitewide_users'] = $context;
+  $export['sitewide_login'] = $context;
 
   return $export;
 }
